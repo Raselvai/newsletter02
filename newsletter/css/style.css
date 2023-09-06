@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.newsletter_wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 100px auto;
+	padding: 0 15px;
+}
+
+.newsletter_item {
+	background-image: url(../img/newsletter_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 60px 40px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.newsletter_item h2 {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+.newsletter_item p {
+	font-size: 15px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.input_box {
+	width: 280px;
+	height: 50px;
+	background: hsla(0,0%,100%,.03);
+    border-color: hsla(0,0%,100%,.1);
+    position: relative;
+    border-radius: 10px;
+}
+
+.input_box input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: transparent;
+	padding-left: 20px;
+	color: #cacaca;
+}
+
+.input_box input::placeholder {
+	color: #cacaca;
+}
+
+.input_box button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 30px;
+	border-radius: 10px;
+	height: 50px;
+	border: transparent;
+	color: #ffffff;
+	font-weight: 700;
+	background: #747ed1;
+	cursor: pointer;
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1399px){
+	
+}
+@media (min-width: 1400px) { 
+	
+}
+@media (min-width: 1200px) { 
+	.container {
+		max-width: 1230px;
+	}
+}
+
+@media (max-width: 1199px) { 
+	
+}
+
+@media (max-width: 991px) {
+	.newsletter_item {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.input_box {
+		margin-top: 30px;
+	}
+
+	.newsletter_item p br {
+		display: none;
+	}
+}
+
+/*Medium devices (tablets, 767px and down)*/
+@media (max-width: 767px) {
+	
+}
+
+/*Small devices (landscape phones, 575px and down)*/
+@media (max-width: 575px) {
+	
+}
+
+
